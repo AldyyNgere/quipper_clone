@@ -56,3 +56,38 @@
 .main-nav-btn:hover {
   background-color: var(--second-dark);
 }
+
+.main-nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  padding: 0 13rem;
+  background-color: var(--dark-blue);
+}
+
+.brand-img {
+  width: 20%;
+  height: auto;
+}
+
+.main-nav-bottom .menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main-nav-bottom .menu .menu-list:nth-child(3) a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.main-nav-bottom .menu .menu-list:first-child a {
+  color: #fff;
+}
+
+.main-nav-bottom .menu .menu-list a {
+  color: var(--white-grey);
+  font-size: 1.5rem;
+}
