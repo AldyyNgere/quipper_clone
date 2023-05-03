@@ -1,12 +1,58 @@
-/* HEADER  */
-.main-nav-top {
-  display: flex;
-  justify-content: space-between;
-  background-color: red;
-  padding: 0 4.5rem;
-  line-height: 7rem;
+:root {
+  --primary-blue: #075eae;
+  --dark-blue: #06549c;
+  --second-color: #f6b024;
+  --second-dark: #dd9e20;
+  --white-grey: #e6e6e6;
 }
 
-.main-nav-top-btn-box {
-  display: inline-block;
+/* Header  */
+.main-nav-top {
+  background-color: var(--primary-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  padding: 0 13rem;
+}
+
+.main-nav-top-left-box {
+  display: flex;
+  gap: 3rem;
+}
+
+.main-nav-top-left-box a,
+.main-nav-top-left-box p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.main-nav-top-left-box a span,
+.main-nav-top-left-box p span {
+  color: var(--white-grey);
+}
+
+.main-nav-top-left-box a ion-icon,
+.main-nav-top-left-box p ion-icon {
+  color: var(--second-color);
+}
+
+.main-nav-top-left-box a span:hover {
+  color: #fff;
+}
+
+.main-nav-btn {
+  padding: 0.9rem 1.6rem;
+  border-radius: 1.5rem;
+  font-family: inherit;
+  background-color: var(--second-color);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: 0.2s;
+}
+
+.main-nav-btn:hover {
+  background-color: var(--second-dark);
 }
