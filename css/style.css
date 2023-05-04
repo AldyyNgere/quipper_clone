@@ -87,7 +87,41 @@
   color: #fff;
 }
 
+.main-nav-bottom .menu .menu-list {
+  position: relative;
+}
+
 .main-nav-bottom .menu .menu-list a {
   color: var(--white-grey);
-  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.main-nav-bottom .menu .menu-list:first-child::after {
+  content: "";
+  background-color: var(--second-color);
+  height: 9%;
+  width: 100%;
+  position: absolute;
+  top: 110%;
+  left: 0;
+}
+
+.main-nav-bottom .menu .menu-list::after {
+  content: "";
+  background-color: var(--second-color);
+  height: 9%;
+  width: 0;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  transform-origin: left;
+  transition: 0.3s;
+}
+
+.main-nav-bottom .menu .menu-list:hover::after {
+  width: 100%;
+}
+
+.main-nav-bottom .menu .menu-list a:hover {
+  color: #fff;
 }
