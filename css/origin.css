@@ -16,8 +16,14 @@ body {
   font-family: "Open sans", sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
+  margin-bottom: 10rem;
 }
 
 .btn {
   cursor: pointer;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
 }
